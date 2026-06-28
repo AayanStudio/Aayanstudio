@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Aayan Studio</title>
+  <meta name="description" content="Get in touch with Aayan Studio for web development projects.">
+  <meta name="author" content="Aayan Atif">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="shortcut icon" href="letter-a.png" type="image/x-icon">
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">
+      <a href="index.html">Aayan<span>Studio</span></a>
+    </h1>
+    <nav>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-btn" id="menuBtn" role="button" aria-label="Toggle menu" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <main>
+    <section class="section">
+      <p class="section-tag reveal">Let's Talk</p>
+      <h2 class="section-title reveal">Get In <span>Touch</span></h2>
+
+      <div class="contact-layout">
+
+        <!-- Left: info -->
+        <div class="contact-info reveal">
+          <h3>Have a project in mind?</h3>
+          <p>
+            I'm always open to discussing new projects, creative ideas, or opportunities
+            to be part of your vision. Drop me a message below.
+          </p>
+
+          <div class="contact-info-links">
+            <a href="https://wa.me/923060095926" target="_blank" class="contact-info-link">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>03060095926</span>
+            </a>
+            <a href="mailto:aayanatif.work@gmail.com" class="contact-info-link">
+              <i class="fa-solid fa-envelope"></i>
+              <span>aayanatif.work@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <form class="fullform reveal reveal-delay-2" id="contactForm" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="uname">Name <span class="req">*</span></label>
+              <input type="text" id="uname" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="unumber">Phone <span class="req">*</span></label>
+              <input type="tel" id="unumber" name="number" placeholder="Your number">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="umail">Email <span class="req">*</span></label>
+            <input type="email" id="umail" name="email" placeholder="you@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="ucomment">Message <span class="req">*</span></label>
+            <textarea id="ucomment" name="message" placeholder="Tell me about your project…" rows="5"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="reset" class="btn-reset">Reset</button>
+            <button type="submit" class="btn-submit">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <a href="https://wa.me/923060095926?text=Hello%20Aayan%20Studio's,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+     class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    <p>&copy; 2025 <a href="mailto:aayanatif.work@gmail.com">Aayan Studio</a> — All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init("R7dx7g58WxYOLOyAe");</script>
+  <script src="script.js"></script>
+</body>
+</html>

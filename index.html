@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aayan Studio — Frontend Developer</title>
+  <meta name="description" content="AayanStudio — modern frontend web development portfolio showcasing responsive websites built with HTML, CSS, and JavaScript.">
+  <meta name="keywords" content="AayanStudio, web developer portfolio, frontend developer, HTML CSS JavaScript, responsive websites">
+  <meta name="author" content="Aayan Atif">
+  <meta property="og:title" content="AayanStudio - Web Developer Portfolio">
+  <meta property="og:description" content="Modern responsive websites built with HTML, CSS and JavaScript.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="shortcut icon" href="letter-a.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header>
+    <h1 class="logo">
+      <a href="index.html">Aayan<span>Studio</span></a>
+    </h1>
+    <nav>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger -->
+      <div class="menu-btn" id="menuBtn" role="button" aria-label="Toggle menu" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile overlay (outside header so z-index works correctly) -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <main>
+
+    <!-- ══ HERO ══ -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Available for work</p>
+        <h2>
+          Hello, I'm <span class="name">Aayan</span><br>
+          <span id="typewriter">Frontend Developer</span><span class="cursor"></span>
+        </h2>
+        <p class="subtitle">
+          I craft modern, responsive websites and landing pages with clean code
+          using HTML, CSS &amp; JavaScript — built to perform on every device.
+        </p>
+        <div class="hero-buttons">
+          <a href="projects.html" class="btn btn-primary">
+            <i class="fa-solid fa-layer-group"></i> View Projects
+          </a>
+          <a href="contact.html" class="btn btn-outline">
+            <i class="fa-solid fa-envelope"></i> Contact Me
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num" data-target="30" data-suffix="+">0+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="3" data-suffix="+">0+</div>
+            <div class="stat-label">Skills Mastered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="100" data-suffix="%">0%</div>
+            <div class="stat-label">Passion</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="hero-image-ring">
+          <img src="profile image.png" alt="Aayan — Frontend Developer">
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ ABOUT ══ -->
+    <section class="section" id="about">
+      <p class="section-tag reveal">About</p>
+      <h2 class="section-title reveal">Who I Am</h2>
+
+      <div class="about-grid">
+        <div class="about-card wide reveal reveal-delay-1">
+          <div class="about-card-icon">👨‍💻</div>
+          <h3>About Me</h3>
+          <p>
+            I'm a passionate frontend developer focused on building modern, responsive
+            websites that look great and feel smooth. I work with HTML, CSS, and JavaScript
+            to bring ideas to life — from landing pages to full portfolio sites.
+          </p>
+        </div>
+
+        <div class="about-card reveal reveal-delay-2">
+          <div class="about-card-icon">📞</div>
+          <h3>Get in Touch</h3>
+          <div class="contact-links">
+            <a href="https://wa.me/923060095926" target="_blank" class="contact-link">
+              <i class="fa-brands fa-whatsapp"></i> 03060095926
+            </a>
+            <a href="mailto:aayanatif.work@gmail.com" class="contact-link">
+              <i class="fa-solid fa-envelope"></i> aayanatif.work@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="about-card reveal reveal-delay-3">
+          <div class="about-card-icon">🎯</div>
+          <h3>What I Focus On</h3>
+          <p>Clean code, pixel-perfect layouts, smooth UX, and sites that actually load fast.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SKILLS ══ -->
+    <section class="section" id="skills">
+      <p class="section-tag reveal">Expertise</p>
+      <h2 class="section-title reveal">Skills &amp; Tools</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal reveal-delay-1"><span class="skill-icon">🌐</span>HTML</div>
+        <div class="skill-card reveal reveal-delay-2"><span class="skill-icon">🎨</span>CSS</div>
+        <div class="skill-card reveal reveal-delay-3"><span class="skill-icon">⚡</span>JavaScript</div>
+        <div class="skill-card reveal reveal-delay-1"><span class="skill-icon">📱</span>Responsive Design</div>
+        <div class="skill-card reveal reveal-delay-2"><span class="skill-icon">🚀</span>Landing Pages</div>
+        <div class="skill-card reveal reveal-delay-3"><span class="skill-icon">🖥️</span>Frontend Dev</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ WHATSAPP ══ -->
+  <a href="https://wa.me/923060095926?text=Hello%20Aayan%20Studio's,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+     class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    <p>&copy; 2025 <a href="mailto:aayanatif.work@gmail.com">Aayan Studio</a> — All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
