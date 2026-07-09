@@ -47,8 +47,24 @@ if (menuBtn && navMenu) {
 
 if (navOverlay) navOverlay.addEventListener('click', closeMenu);
 
+const navCloseBtn = document.getElementById('navCloseBtn');
+if (navCloseBtn) navCloseBtn.addEventListener('click', closeMenu);
+
 // Close menu when a link is clicked
 navLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+// Close the mobile menu automatically if the page is scrolled while it's open
+window.addEventListener('scroll', () => {
+  if (navMenu && navMenu.classList.contains('active')) closeMenu();
+}, { passive: true });
+
+window.addEventListener('touchmove', () => {
+  if (navMenu && navMenu.classList.contains('active')) closeMenu();
+}, { passive: true });
+
+window.addEventListener('wheel', () => {
+  if (navMenu && navMenu.classList.contains('active')) closeMenu();
+}, { passive: true });
 
 // ── TYPEWRITER EFFECT ─────────────────────────────────
 const typewriterEl = document.getElementById('typewriter');
